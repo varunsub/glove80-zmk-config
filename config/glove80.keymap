@@ -34,12 +34,12 @@
 
 #endif
 
-
+{
 
     /* Input Listeners */
     /* System behavior and Macros */
 
-    /{
+    /
 
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
@@ -365,7 +365,7 @@
 &trans                &kp N6        &kp N7        &kp N8        &kp N9       &kp N0                                                             &trans  &trans  &trans  &trans  &trans  &trans
 &trans                &kp N1        &kp N2        &kp N3        &kp N4       &kp N5                                                             &trans  &trans  &trans  &trans  &trans  &trans
 &trans                &kp PRCNT     &kp FSLH      &kp MINUS     &kp KP_PLUS  &kp EQUAL     &trans  &kt LSHFT  &to 0     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&magic LAYER_Magic 0  &kp KP_SLASH  &kp KP_EQUAL  &kp KP_MINUS  &kp LS(N8)                 &trans  &trans     &tog 3    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&magic LAYER_Magic 0  &kp KP_SLASH  &kp KP_EQUAL  &kp KP_MINUS  &kp LS(N8)                 &trans  &trans     &tog 1    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -377,7 +377,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                         &kp LBKT              &kp RBKT        &kp UP        &kp PG_UP     &kp PG_DN  &kp SCROLLLOCK
 &trans  &trans  &trans  &trans  &trans  &trans                                                         &kp SQT               &kp LEFT        &kp DOWN      &kp RIGHT     &kp SEMI   &kp SQT
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &to 0   &kt RSHFT  &trans    &kp DOUBLE_QUOTES     &kp MINUS       &trans        &trans        &trans     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &tog 4  &kp RALT   &kp RGUI                        &kp UNDERSCORE  &trans        &trans        &trans     &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &tog 2  &kp RALT   &kp RGUI                        &kp UNDERSCORE  &trans        &trans        &trans     &trans
             >;
         };
 
