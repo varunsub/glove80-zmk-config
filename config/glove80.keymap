@@ -281,42 +281,41 @@
 
 /* Custom Defined Behaviors */
 / {
- behaviors {
+    behaviors {
+        /* Unique node-names instead of unit-addresses */
 
-    j_arrow: behavior-mod-morph@0{
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      mods     = <MOD_RALT>;
-      keep-mods = <MOD_RALT>;
-      bindings = <&kp J>, <&kp LEFT>;
+        j_arrow: behavior-mod-morph-j {
+            compatible   = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods         = <MOD_RALT>;
+            keep-mods    = <MOD_RALT>;
+            bindings     = <&kp J>, <&kp LEFT>;
+        };
+
+        k_arrow: behavior-mod-morph-k {
+            compatible   = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods         = <MOD_RALT>;
+            keep-mods    = <MOD_RALT>;
+            bindings     = <&kp K>, <&kp DOWN>;
+        };
+
+        l_arrow: behavior-mod-morph-l {
+            compatible   = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods         = <MOD_RALT>;
+            keep-mods    = <MOD_RALT>;
+            bindings     = <&kp L>, <&kp RIGHT>;
+        };
+
+        i_arrow: behavior-mod-morph-i {
+            compatible   = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods         = <MOD_RALT>;
+            keep-mods    = <MOD_RALT>;
+            bindings     = <&kp I>, <&kp UP>;
+        };
     };
-
-    k_arrow: behavior-mod-morph@1 {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      mods     = <MOD_RALT>;
-      keep-mods = <MOD_RALT>;
-      bindings = <&kp K>, <&kp DOWN>;
-    };     
-   l_arrow: behavior-mod-morph@2 {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      mods     = <MOD_RALT>;
-      keep-mods = <MOD_RALT>;
-      bindings = <&kp L>, <&kp RIGHT>;
-    };
-
-    i_arrow: behavior-mod-morph@3 {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      mods     = <MOD_RALT>;
-      keep-mods = <MOD_RALT>;
-      bindings = <&kp I>, <&kp UP>;
-    };
-
-  };
-
-
 };
 
 /* Automatically generated macro definitions */
