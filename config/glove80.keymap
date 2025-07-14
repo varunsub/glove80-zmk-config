@@ -34,12 +34,12 @@
 
 #endif
 
-{
+/{
 
     /* Input Listeners */
     /* System behavior and Macros */
 
-    /
+
 
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
