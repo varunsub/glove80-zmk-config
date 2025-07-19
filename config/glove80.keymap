@@ -307,7 +307,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MM_J_GUI_ALT";
             #binding-cells = <0>;
-            match-mode = "any";
             mods       = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
             keep-mods  = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
             bindings   = <&kp J>, <&kp LEFT>;
@@ -316,7 +315,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MM_K_GUI_ALT";
             #binding-cells = <0>;
-            match-mode = "any";
             mods       = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
             keep-mods  = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
             bindings   = <&kp K>, <&kp DOWN>;
@@ -325,7 +323,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MM_L_GUI_ALT";
             #binding-cells = <0>;
-            match-mode = "any";
             mods       = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
             keep-mods  = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
             bindings   = <&kp L>, <&kp RIGHT>;
@@ -334,7 +331,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MM_I_GUI_ALT";
             #binding-cells = <0>;
-            match-mode = "any";
             mods       = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
             keep-mods  = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
             bindings   = <&kp I>, <&kp UP>;
