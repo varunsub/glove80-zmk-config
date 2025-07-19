@@ -80,10 +80,10 @@
         mt_space_gui: mt_space_gui {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_GUI_SPACE";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
              flavor = "balanced";   
             tapping-term-ms = <300>;  
-            bindings = <&kp SPACE &kp LGUI>;
+            bindings = <&kp  &kp>;
         };
     };
 };
@@ -369,7 +369,7 @@
 &kp TAB               &kp Q         &kp W         &kp E     &kp R      &kp T                                                                                         &kp Y   &kp U       &i_arrow      &kp O         &kp P     &kp BSLH
 &kp CAPS              &kp A         &kp S         &kp D     &kp F      &kp G                                                                                         &kp H   &j_arrow    &k_arrow      &l_arrow      &kp SEMI  &kp SQT
 &kp LSHFT             &kp Z         &kp X         &kp C     &kp V      &kp B   &kp BSPC  &kp LSHFT  &toggle_both_syms    &toggle_both_syms  &kp RSHFT  &kp KP_ENTER     &kp N   &kp M       &kp COMMA     &kp DOT       &kp FSLH  &kp RET
-&magic LAYER_Magic 0  &kp MINUS     &kp EQUAL     &kp LEFT  &kp RIGHT          &mt_space_gui  &kp LCTRL  &left                &right_layer_ht  22           &kp RALT   &mt_space_gui           &kp UP      &kp DOWN      &kp LBKT      &kp RBKT  &magic LAYER_Magic 0
+&magic LAYER_Magic 0  &kp MINUS     &kp EQUAL     &kp LEFT  &kp RIGHT          &mt_space_gui SPACE LGUI  &kp LCTRL  &left                &right_layer_ht  2 2           &kp RALT   &mt_space_gui SPACE LGUI          &kp UP      &kp DOWN      &kp LBKT      &kp RBKT  &magic LAYER_Magic 0
             >;
         };
 
@@ -377,7 +377,7 @@
         layer_Left {
             label = "LOWER (left half)";
             bindings = <
-&kp C_BRI_DN          &kp C_BRI_UP  &kp C_PREV    &kp C_NEXT    &kp C_PP                                                                                &trans  &trans  &trans  &trans  &trans
+&kp ESC &kp C_BRI_DN          &kp C_BRI_UP  &kp C_PREV    &kp C_NEXT                                                                                 &trans  &trans  &trans  &trans  &trans
 &trans                &kp EXCL      &kp LS(N4)    &kp LT        &kp GT       &kp KP_EQUAL                                                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans                &kp N6        &kp N7        &kp N8        &kp N9       &kp N0                                                             &trans  &trans  &trans  &trans  &trans  &trans
 &trans                &kp N1        &kp N2        &kp N3        &kp N4       &kp N5                                                             &trans  &trans  &trans  &trans  &trans  &trans
@@ -394,7 +394,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                         &kp LBKT              &kp RBKT        &kp UP        &kp PG_UP     &kp PG_DN  &kp SCROLLLOCK
 &trans  &trans  &trans  &trans  &trans  &trans                                                         &kp SQT               &kp LEFT        &kp DOWN      &kp RIGHT     &kp SEMI   &kp SQT
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &to 0   &kp RSHFT  &trans    &kp DOUBLE_QUOTES     &kp MINUS       &trans        &trans        &trans     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &tog 2  &kp RALT   &mt_space_gui                       &kp UNDERSCORE  &trans        &trans        &trans     &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &tog 2  &kp RALT   &mt_space_gui   SPACE LGUI                    &kp UNDERSCORE  &trans        &trans        &trans     &trans
             >;
         };
 
