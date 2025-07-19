@@ -303,41 +303,43 @@
     behaviors {
         /* Unique node-names instead of unit-addresses */
 
-        j_arrow: behavior-mod-morph-j {
+               j_arrow: behavior-mod-morph-j {
             compatible = "zmk,behavior-mod-morph";
+            label = "MM_J_GUI_ALT";
             #binding-cells = <0>;
             match-mode = "any";
-            mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
-            keep-mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
-            bindings = <&kp J>, <&kp LEFT>;
+            mods       = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            keep-mods  = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            bindings   = <&kp J>, <&kp LEFT>;
         };
-
         k_arrow: behavior-mod-morph-k {
             compatible = "zmk,behavior-mod-morph";
+            label = "MM_K_GUI_ALT";
             #binding-cells = <0>;
             match-mode = "any";
-            mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
-            keep-mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
-            bindings = <&kp K>, <&kp DOWN>;
+            mods       = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            keep-mods  = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            bindings   = <&kp K>, <&kp DOWN>;
         };
-
         l_arrow: behavior-mod-morph-l {
             compatible = "zmk,behavior-mod-morph";
+            label = "MM_L_GUI_ALT";
             #binding-cells = <0>;
             match-mode = "any";
-            mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
-            keep-mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
-            bindings = <&kp L>, <&kp RIGHT>;
+            mods       = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            keep-mods  = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            bindings   = <&kp L>, <&kp RIGHT>;
         };
-
         i_arrow: behavior-mod-morph-i {
             compatible = "zmk,behavior-mod-morph";
+            label = "MM_I_GUI_ALT";
             #binding-cells = <0>;
             match-mode = "any";
-            mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
-            keep-mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
-            bindings = <&kp I>, <&kp UP>;
+            mods       = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            keep-mods  = <(MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            bindings   = <&kp I>, <&kp UP>;
         };
+
     };
 };
 
