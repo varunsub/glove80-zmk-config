@@ -69,12 +69,14 @@
         right_layer_ht: right_layer_ht {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_RIGHT_LAYER";
-            #binding-cells = <0>;
-            flavor = "hold-preferred";      /* quicker to recognise holds */
+            #binding-cells = <2>;
+            flavor = "balanced";      /* quicker to recognise holds */
             tapping-term-ms = <200>;
-            bindings = <&tog LAYER_Right &mo LAYER_Right>;
+            bindings = <&mo>, <&tog>;  
 
         };
+
+
         mt_space_gui: mt_space_gui {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_GUI_SPACE";
@@ -367,7 +369,7 @@
 &kp TAB               &kp Q         &kp W         &kp E     &kp R      &kp T                                                                                         &kp Y   &kp U       &i_arrow      &kp O         &kp P     &kp BSLH
 &kp CAPS              &kp A         &kp S         &kp D     &kp F      &kp G                                                                                         &kp H   &j_arrow    &k_arrow      &l_arrow      &kp SEMI  &kp SQT
 &kp LSHFT             &kp Z         &kp X         &kp C     &kp V      &kp B   &kp BSPC  &kp LSHFT  &toggle_both_syms    &toggle_both_syms  &kp RSHFT  &kp KP_ENTER     &kp N   &kp M       &kp COMMA     &kp DOT       &kp FSLH  &kp RET
-&magic LAYER_Magic 0  &kp MINUS     &kp EQUAL     &kp LEFT  &kp RIGHT          &mt_space_gui  &kp LCTRL  &left                &right_layer_ht             &kp RALT   &mt_space_gui           &kp UP      &kp DOWN      &kp LBKT      &kp RBKT  &magic LAYER_Magic 0
+&magic LAYER_Magic 0  &kp MINUS     &kp EQUAL     &kp LEFT  &kp RIGHT          &mt_space_gui  &kp LCTRL  &left                &right_layer_ht  22           &kp RALT   &mt_space_gui           &kp UP      &kp DOWN      &kp LBKT      &kp RBKT  &magic LAYER_Magic 0
             >;
         };
 
