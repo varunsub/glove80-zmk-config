@@ -65,12 +65,15 @@
             bindings = <&mo LAYER_Left>, <&to LAYER_Left>;
         };
 
-        right: right {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_TAP_DANCE";
+
+        right_layer_ht: right_layer_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_RIGHT_LAYER";
             #binding-cells = <0>;
+            flavor = "hold-preferred";      /* quicker to recognise holds */
             tapping-term-ms = <200>;
-            bindings = <&mo LAYER_Right>, <&to LAYER_Right>;
+            bindings = <&tog LAYER_Right>,  /* tap  – toggle layer   */
+                       <&mo  LAYER_Right>;  /* hold – momentary mod  */
         };
     };
 };
@@ -293,32 +296,36 @@
         j_arrow: behavior-mod-morph-j {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD_RALT>;
-            keep-mods = <MOD_RALT>;
+            match-mode = "any";
+            mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
+            keep-mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
             bindings = <&kp J>, <&kp LEFT>;
         };
 
         k_arrow: behavior-mod-morph-k {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD_RALT>;
-            keep-mods = <MOD_RALT>;
+            match-mode = "any";
+            mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
+            keep-mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
             bindings = <&kp K>, <&kp DOWN>;
         };
 
         l_arrow: behavior-mod-morph-l {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD_RALT>;
-            keep-mods = <MOD_RALT>;
+            match-mode = "any";
+            mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
+            keep-mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
             bindings = <&kp L>, <&kp RIGHT>;
         };
 
         i_arrow: behavior-mod-morph-i {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD_RALT>;
-            keep-mods = <MOD_RALT>;
+            match-mode = "any";
+            mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
+            keep-mods = <MOD_RALT MOD_LGUI MOD_RGUI>;
             bindings = <&kp I>, <&kp UP>;
         };
     };
@@ -352,7 +359,7 @@
 &kp TAB               &kp Q         &kp W         &kp E     &kp R      &kp T                                                                                         &kp Y   &kp U       &i_arrow      &kp O         &kp P     &kp BSLH
 &kp CAPS              &kp A         &kp S         &kp D     &kp F      &kp G                                                                                         &kp H   &j_arrow    &k_arrow      &l_arrow      &kp SEMI  &kp SQT
 &kp LSHFT             &kp Z         &kp X         &kp C     &kp V      &kp B   &kp BSPC  &kp LSHFT  &toggle_both_syms    &toggle_both_syms  &kp RSHFT  &kp KP_ENTER     &kp N   &kp M       &kp COMMA     &kp DOT       &kp FSLH  &kp RET
-&magic LAYER_Magic 0  &kp MINUS     &kp EQUAL     &kp LEFT  &kp RIGHT          &mt  LGUI SPACE  &kp LCTRL  &left                &right             &kp RALT   &mt LGUI SPACE           &kp UP      &kp DOWN      &kp LBKT      &kp RBKT  &magic LAYER_Magic 0
+&magic LAYER_Magic 0  &kp MINUS     &kp EQUAL     &kp LEFT  &kp RIGHT          &mt  LGUI SPACE  &kp LCTRL  &left                &right_layer_ht             &kp RALT   &mt LGUI SPACE           &kp UP      &kp DOWN      &kp LBKT      &kp RBKT  &magic LAYER_Magic 0
             >;
         };
 
