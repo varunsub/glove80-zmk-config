@@ -70,7 +70,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HT_RIGHT_LAYER";
             #binding-cells = <2>;
-            flavor = "balanced";      /* quicker to recognise holds */
+            flavor = "tap-preferred";      /* quicker to recognise holds */
             tapping-term-ms = <200>;
             bindings = <&mo>, <&tog>;  
 
@@ -81,7 +81,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MT_GUI_SPACE";
             #binding-cells = <2>;
-             flavor = "balanced";   
+            flavor = "tap-preferred";      /* quicker to recognise holds */
             tapping-term-ms = <300>;  
             bindings = <&kp  &kp>;
         };
