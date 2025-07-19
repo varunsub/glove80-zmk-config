@@ -82,7 +82,7 @@
             label = "MT_GUI_SPACE";
             #binding-cells = <2>;
             flavor = "tap-preferred";      /* quicker to recognise holds */
-            tapping-term-ms = <300>;  
+            tapping-term-ms = <200>;  
             bindings = <&kp  &kp>;
         };
     };
