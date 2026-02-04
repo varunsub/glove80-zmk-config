@@ -1,5 +1,5 @@
 { pkgs ?  import <nixpkgs> {}
-, firmware ? import ../zmk {}
+, firmware ? import ../src {}
 }:
 
 let
