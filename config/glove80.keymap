@@ -428,7 +428,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                         &kp LEFT_PARENTHESIS  &kp RPAR        &kp LBRC      &kp RBRC      &kp FSLH   &kp BSLH
 &trans  &trans  &trans  &trans  &trans  &trans                                                         &kp LBKT              &kp RBKT        &kp UP        &kp PG_UP     &kp PG_DN  &kp SCROLLLOCK
 &trans  &trans  &trans  &trans  &trans  &trans                                                         &kp SQT               &kp LEFT        &kp DOWN      &kp RIGHT     &kp SEMI   &kp SQT
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &to 0   &kp RSHFT  &trans    &kp DOUBLE_QUOTES     &kp MINUS       &kp UNDERSCORE        &trans        &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &to 0   &kp RSHFT  &trans    &kp DOUBLE_QUOTES     &kp UNDERSCORE       &kp MINUS        &trans        &trans     &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &tog 2  &kp RALT   &mt_space_gui    RGUI  SPACE                  &kp UNDERSCORE  &trans        &trans        &trans     &trans
             >;
         };
