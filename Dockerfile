@@ -9,7 +9,7 @@ RUN <<EOF
     mkdir /config
     # Mirror ZMK repository to make it easier to reference both branches and
     # tags without remote namespacing
-    git clone --mirror https://github.com/`o-sc/zmk /zmk
+    git clone --mirror https://github.com/moergo-sc/zmk /zmk
     GIT_DIR=/zmk git worktree add --detach /src
 EOF
 
